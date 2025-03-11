@@ -1,0 +1,8 @@
+# Godot-specific files to ignore
+.import/
+.cache/
+.config/
+.editor_config
+export_presets.cfg
+*.godot.tmp
+*.godot.import

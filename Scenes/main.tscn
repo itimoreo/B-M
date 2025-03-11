@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://decj72x36wp7n"]
+
+[ext_resource type="PackedScene" uid="uid://cmtra6dmlcnaf" path="res://Scenes/Player/Player.tscn" id="1_1rjao"]
+[ext_resource type="Script" path="res://Scripts/GameManager/GameManager.gd" id="1_dcxtl"]
+[ext_resource type="Script" path="res://Scripts/GameManager/DamageHandler.gd" id="2_67qnx"]
+[ext_resource type="PackedScene" uid="uid://b825eq88r5n1p" path="res://Scenes/Weapons/weapon.tscn" id="3_fys3f"]
+[ext_resource type="PackedScene" uid="uid://dqycsog8mad8v" path="res://Scenes/UI.tscn" id="5_llwxn"]
+[ext_resource type="PackedScene" uid="uid://dbjj46on516mj" path="res://Scenes/Ennemy/enemy_spawner.tscn" id="5_urweg"]
+
+[node name="Main" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_dcxtl")
+
+[node name="DamageHandler" type="Node" parent="."]
+script = ExtResource("2_67qnx")
+
+[node name="Player" parent="." instance=ExtResource("1_1rjao")]
+position = Vector2(461, 208)
+weapon_scene = ExtResource("3_fys3f")
+
+[node name="EnemySpawner" parent="." instance=ExtResource("5_urweg")]
+position = Vector2(176, 115)
+spawn_interval = 0.5
+
+[node name="UI" parent="." instance=ExtResource("5_llwxn")]

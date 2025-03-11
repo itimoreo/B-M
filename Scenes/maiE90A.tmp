@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://decj72x36wp7n"]
+
+[ext_resource type="PackedScene" uid="uid://cmtra6dmlcnaf" path="res://Scenes/Player/Player.tscn" id="1_1rjao"]
+[ext_resource type="Script" path="res://Scripts/GameManager/GameManager.gd" id="1_dcxtl"]
+
+[node name="Main" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_dcxtl")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_1rjao")]

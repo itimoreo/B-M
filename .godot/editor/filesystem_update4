@@ -1,0 +1,15 @@
+res://Scenes/Player/Player.tscn
+res://Scenes/main.tscn
+res://Scenes/Ennemy/enemy.tscn
+res://Scenes/Weapons/weapon.tscn
+res://Scenes/Weapons/bullet.tscn
+res://Scenes/Particules/DeathParticule.tscn
+res://Scenes/Ennemy/enemy_spawner.tscn
+res://Scripts/UI/ui.gd
+res://Scenes/UI.tscn
+res://Scripts/Player/player.gd
+res://Scripts/Enemy/enemy.gd
+res://Scripts/GameManager/DamageHandler.gd
+res://Scenes/Weapons/bullet.gd
+res://Scenes/Ennemy/enemy_spawner.gd
+res://Scenes/Weapons/weapon.gd

@@ -1,0 +1,12 @@
+Node
+Timer
+CollisionShape2D
+Area2D
+VBoxContainer
+Label
+CanvasLayer
+Camera2D
+Sprite2D
+CollisionPolygon2D
+Polygon2D
+CharacterBody2D

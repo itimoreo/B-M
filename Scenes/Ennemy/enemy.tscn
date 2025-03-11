@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8m8hgxw1g4uj"]
+
+[ext_resource type="Script" path="res://Scripts/Enemy/enemy.gd" id="1_dhwfa"]
+[ext_resource type="PackedScene" uid="uid://bai4rw4folcqi" path="res://Scenes/Particules/DeathParticule.tscn" id="2_glg3e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6tai4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_btp3m"]
+size = Vector2(24, 24)
+
+[node name="Enemy" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_dhwfa")
+max_health = 20
+deathParticule = ExtResource("2_glg3e")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.685733, 3.10443e-06, 5.77569e-07, 1)
+polygon = PackedVector2Array(-10, -10, 10, -10, 10, 0, 0, 10, -10, 0)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-10, -10, 10, -10, 10, 0, 0, 10, -10, 0)
+
+[node name="Area2D" type="Area2D" parent="." groups=["enemies"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_6tai4")
+
+[node name="Hitbox" type="Area2D" parent="." groups=["enemies"]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("RectangleShape2D_btp3m")
+debug_color = Color(0.683362, 0.474001, 0.455588, 0.42)

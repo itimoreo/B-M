@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3ini4uocjvow"]
+
+[ext_resource type="Script" path="res://Scenes/Weapons/bullet.gd" id="1_ll828"]
+
+[node name="Bullet" type="Node2D" groups=["bullets"]]
+script = ExtResource("1_ll828")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-4, -5, -4, 3, 4, 3, 4, -5, 0, -9)
+
+[node name="Area2D" type="Area2D" parent="Polygon2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Polygon2D/Area2D"]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(-12, 12)
+polygon = PackedVector2Array(8, -17, 12, -21, 16, -17, 16, -9, 8, -9)
+
+[connection signal="area_entered" from="Polygon2D/Area2D" to="." method="_on_area_2d_area_entered"]
