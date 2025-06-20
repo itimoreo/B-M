@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c8m8hgxw1g4uj"]
 
-[ext_resource type="Script" path="res://Scripts/Enemy/enemy.gd" id="1_dhwfa"]
+[ext_resource type="Script" uid="uid://1f78577gnxbj" path="res://Scripts/Enemy/enemy.gd" id="1_dhwfa"]
 [ext_resource type="PackedScene" uid="uid://bai4rw4folcqi" path="res://Scenes/Particules/DeathParticule.tscn" id="2_glg3e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6tai4"]

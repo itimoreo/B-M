@@ -29,6 +29,6 @@ color_ramp = SubResource("GradientTexture1D_nyaul")
 self_modulate = Color(0.930604, 0.0266494, 1.73271e-06, 1)
 emitting = false
 amount = 50
-process_material = SubResource("ParticleProcessMaterial_exlig")
 one_shot = true
 explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_exlig")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dbjj46on516mj"]
 
-[ext_resource type="Script" path="res://Scenes/Ennemy/enemy_spawner.gd" id="1_dymm6"]
+[ext_resource type="Script" uid="uid://c3ilaedxv5vxv" path="res://Scenes/Ennemy/enemy_spawner.gd" id="1_dymm6"]
 [ext_resource type="PackedScene" uid="uid://c8m8hgxw1g4uj" path="res://Scenes/Ennemy/enemy.tscn" id="2_u7ccu"]
 
 [node name="EnemySpawner" type="Node2D"]
